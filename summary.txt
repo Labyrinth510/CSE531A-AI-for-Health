@@ -1,0 +1,26 @@
+'ADMISSIONS.csv': row_id, subject_id, hadm_id, admittime, dischtime, deathtime, admission_type, admission_location, discharge_location, insurance, language, religion, marital_status, ethnicity, edregtime, edouttime, diagnosis, hospital_expire_flag, has_chartevents_data
+'CALLOUT.csv': row_id, subject_id, hadm_id, submit_wardid, submit_careunit, curr_wardid, curr_careunit, callout_wardid, callout_service, request_tele, request_resp, request_cdiff, request_mrsa, request_vre, callout_status, callout_outcome, discharge_wardid, acknowledge_status, createtime, updatetime, acknowledgetime, outcometime, firstreservationtime, currentreservationtime
+'CAREGIVERS.csv': row_id, cgid, label, description
+'CHARTEVENTS.csv': row_id, subject_id, hadm_id, icustay_id, itemid, charttime, storetime, cgid, value, valuenum, valueuom, warning, error, resultstatus, stopped
+'CPTEVENTS.csv': row_id, subject_id, hadm_id, costcenter, chartdate, cpt_cd, cpt_number, cpt_suffix, ticket_id_seq, sectionheader, subsectionheader, description
+'DATETIMEEVENTS.csv': row_id, subject_id, hadm_id, icustay_id, itemid, charttime, storetime, cgid, value, valueuom, warning, error, resultstatus, stopped
+'DIAGNOSES_ICD.csv': row_id, subject_id, hadm_id, seq_num, icd9_code
+'DRGCODES.csv': row_id, subject_id, hadm_id, drg_type, drg_code, description, drg_severity, drg_mortality
+'D_CPT.csv': row_id, category, sectionrange, sectionheader, subsectionrange, subsectionheader, codesuffix, mincodeinsubsection, maxcodeinsubsection
+'D_ICD_DIAGNOSES.csv': row_id, icd9_code, short_title, long_title
+'D_ICD_PROCEDURES.csv': row_id, icd9_code, short_title, long_title
+'D_ITEMS.csv': row_id, itemid, label, abbreviation, dbsource, linksto, category, unitname, param_type, conceptid
+'D_LABITEMS.csv': row_id, itemid, label, fluid, category, loinc_code
+'ICUSTAYS.csv': row_id, subject_id, hadm_id, icustay_id, dbsource, first_careunit, last_careunit, first_wardid, last_wardid, intime, outtime, los
+'INPUTEVENTS_CV.csv': row_id, subject_id, hadm_id, icustay_id, charttime, itemid, amount, amountuom, rate, rateuom, storetime, cgid, orderid, linkorderid, stopped, newbottle, originalamount, originalamountuom, originalroute, originalrate, originalrateuom, originalsite
+'INPUTEVENTS_MV.csv': row_id, subject_id, hadm_id, icustay_id, starttime, endtime, itemid, amount, amountuom, rate, rateuom, storetime, cgid, orderid, linkorderid, ordercategoryname, secondaryordercategoryname, ordercomponenttypedescription, ordercategorydescription, patientweight, totalamount, totalamountuom, isopenbag, continueinnextdept, cancelreason, statusdescription, comments_editedby, comments_canceledby, comments_date, originalamount, originalrate
+'LABEVENTS.csv': row_id, subject_id, hadm_id, itemid, charttime, value, valuenum, valueuom, flag
+'MICROBIOLOGYEVENTS.csv': row_id, subject_id, hadm_id, chartdate, charttime, spec_itemid, spec_type_desc, org_itemid, org_name, isolate_num, ab_itemid, ab_name, dilution_text, dilution_comparison, dilution_value, interpretation
+'NOTEEVENTS.csv': row_id, subject_id, hadm_id, chartdate, charttime, storetime, category, description, cgid, iserror, text
+'OUTPUTEVENTS.csv': row_id, subject_id, hadm_id, icustay_id, charttime, itemid, value, valueuom, storetime, cgid, stopped, newbottle, iserror
+'PATIENTS.csv': row_id, subject_id, gender, dob, dod, dod_hosp, dod_ssn, expire_flag
+'PRESCRIPTIONS.csv': row_id, subject_id, hadm_id, icustay_id, startdate, enddate, drug_type, drug, drug_name_poe, drug_name_generic, formulary_drug_cd, gsn, ndc, prod_strength, dose_val_rx, dose_unit_rx, form_val_disp, form_unit_disp, route
+'PROCEDUREEVENTS_MV.csv': row_id, subject_id, hadm_id, icustay_id, starttime, endtime, itemid, value, valueuom, location, locationcategory, storetime, cgid, orderid, linkorderid, ordercategoryname, secondaryordercategoryname, ordercategorydescription, isopenbag, continueinnextdept, cancelreason, statusdescription, comments_editedby, comments_canceledby, comments_date
+'PROCEDURES_ICD.csv': row_id, subject_id, hadm_id, seq_num, icd9_code
+'SERVICES.csv': row_id, subject_id, hadm_id, transfertime, prev_service, curr_service
+'TRANSFERS.csv': row_id, subject_id, hadm_id, icustay_id, dbsource, eventtype, prev_careunit, curr_careunit, prev_wardid, curr_wardid, intime, outtime, los
